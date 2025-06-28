@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux Development - Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="background-grid"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        
+        <div class="loading-content">
+            <div class="logo-container">
+                <h1 class="logo">DXL V4 ESX</h1>
+                <p class="subtitle">DEVELOPMENT</p>
+            </div>
+            
+            <div class="loading-bar-container">
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+                <div class="loading-text">Loading resources...</div>
+            </div>
+
+            <div class="interactive-elements">
+                <div class="glow-button" id="discord">
+                    <i class="fab fa-discord"></i>
+                    <span>Join Discord</span>
+                </div>
+                <div class="glow-button" id="website">
+                    <i class="fas fa-globe"></i>
+                    <span>Visit Website</span>
+                </div>
+                <div class="glow-button" id="music-toggle">
+                    <i class="fas fa-music"></i>
+                    <span>Toggle Music</span>
+                </div>
+            </div>
+
+            <div class="credits">
+                <div class="credits-title">Credits</div>
+                <div class="credits-content">
+                    <div class="credit-item">
+                        <span class="credit-name">Daryl Dixon</span>
+                        <span class="credit-role">Development</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="particle-container" id="particles"></div>
+        </div>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="audio/loading.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
